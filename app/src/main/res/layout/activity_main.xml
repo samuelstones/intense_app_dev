@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/smsbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS"
+        app:layout_constraintBottom_toBottomOf="@+id/emailbtn2"
+        app:layout_constraintEnd_toEndOf="@+id/mpesabtn5"
+        app:layout_constraintStart_toStartOf="@+id/cambtn3"
+        app:layout_constraintTop_toTopOf="@+id/emailbtn2" />
+
+    <Button
+        android:id="@+id/emailbtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="134dp"
+        android:text="Email"
+        app:layout_constraintEnd_toEndOf="@+id/sharebtn4"
+        app:layout_constraintStart_toStartOf="@+id/sharebtn4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cambtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:text="CAMERA"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sharebtn4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sharebtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="SHARE"
+        app:layout_constraintEnd_toEndOf="@+id/callbtn6"
+        app:layout_constraintStart_toStartOf="@+id/callbtn6"
+        app:layout_constraintTop_toBottomOf="@+id/emailbtn2" />
+
+    <Button
+        android:id="@+id/mpesabtn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:text="MPESA"
+        app:layout_constraintBaseline_toBaselineOf="@+id/callbtn6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/callbtn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="CALL"
+        app:layout_constraintEnd_toEndOf="@+id/mapbtn8"
+        app:layout_constraintStart_toStartOf="@+id/mapbtn8"
+        app:layout_constraintTop_toBottomOf="@+id/sharebtn4" />
+
+    <Button
+        android:id="@+id/webbtn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:text="Website"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mapbtn8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mapbtn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="70dp"
+        android:text="MAP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callbtn6" />
+</androidx.constraintlayout.widget.ConstraintLayout>
