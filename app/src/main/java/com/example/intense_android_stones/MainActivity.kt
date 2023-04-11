@@ -53,6 +53,19 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(takePictureIntent,1)
         }
 
+        btnCall.setOnClickListener {
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.setData(Uri.parse("tel:"+254773570102))
+            val intent = Intent(Intent.ACTION_CALL,  )
+            startActivity(callIntent)
+        }
+
+        btnMpesa.setOnClickListener {
+            val simTOOLKitIntent = applicationContext.packageManager.getLaunchIntentForPackage(".com.android.stk")
+            simTOOLKitIntent?.let { startActivity(it) }
+            startActivity(intent)
+        }
+
 
 
 
